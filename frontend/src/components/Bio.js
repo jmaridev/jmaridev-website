@@ -1,26 +1,31 @@
 import Image from "next/image";
 import SectionTitle from "./SectionTitle";
+import QuickFacts from "./QuickFacts";
+import avatar from "../../public/avatar.jpeg";
 
 export default function Bio() {
   return (
-    <section className="bg-white w-screen h-fit flex flex-col gap-12 px-80">
-      <SectionTitle />
-      <div className="grid grid-cols-2">
+    <section className="bg-white w-screen h-fit flex flex-col px-80">
+      <SectionTitle
+        title="BIO"
+        titleExt="Yeah I know, I'm not a photographer."
+      />
+      <div className="grid grid-cols-2 gap-12">
         <Image
-          src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3AProfile_avatar_placeholder_large.png&psig=AOvVaw3y5tBsj0ZSd1zTZCHmxwVV&ust=1690335530723000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCNjMstjcqIADFQAAAAAdAAAAABAE"
+          src={avatar}
+          alt="A photo of me."
           width={400}
           height={400}
+          className="w-[80%] place-self-center rounded-2xl"
         />
         <div>
-          <span className="text-3xl">Hej!</span>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-            egestas lacus at efficitur posuere. Donec a est leo. Sed in
-            facilisis tortor, sit amet bibendum dolor. Donec suscipit eu sem
-            vitae finibus. Mauris porttitor nisl tempor, tristique lectus ut,
-            pharetra purus. Suspendisse vel lorem in arcu accumsan feugiat.
-            Morbi at nunc sed erat auctor consectetur.
+          <p className="inline-block mb-4">
+            But I <i>am</i> good at building things that live on the internet.
+            As a Filipino-Canadian full stack software engineer, I love
+            designing, developing, and deploying beautiful web applications,
+            whilst eating some really good food.
           </p>
+          <QuickFacts />
         </div>
       </div>
     </section>

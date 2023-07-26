@@ -27,7 +27,7 @@ export default function Contact() {
           placeholder="What's the gameplan?"
           required
         ></textarea>
-        <div class="h-captcha" data-captcha="true"></div>
+        <div className="h-captcha" data-captcha="true"></div>
         <button type="submit">Send</button>
       </form>
       <script src="https://web3forms.com/client/script.js" async defer></script>
