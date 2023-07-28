@@ -7,7 +7,7 @@ export default function Skill({
   return (
     <div className="w-full flex flex-col place-items-center justify-center">
       {icon}
-      <span className="text-center whitespace-nowrap">{name}</span>
+      <span className="text-center whitespace-nowrap text-base">{name}</span>
     </div>
   );
 }

@@ -2,10 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url(https://fonts.googleapis.com/css2?family=Oxygen&display=swap);
-
-.font-heading {
-  font-family: 'Oxygen', sans-serif;
+nav {
+  z-index: 1000;
 }
 
 :root {

@@ -15,17 +15,17 @@ export default function Home() {
     <main className="flex flex-col">
       <Nav />
       <Hero />
-      <Transition imageUrl={waveWhite} />
+      {/* <Transition imageUrl={waveWhite} /> */}
       <Bio />
-      <Transition imageUrl={waveSlate} />
+      {/* <Transition imageUrl={waveSlate} /> */}
       <Skills />
-      <Transition imageUrl={waveWhite} />
+      {/* <Transition imageUrl={waveWhite} /> */}
       <Projects />
-      <Transition imageUrl={waveSlate} />
+      {/* <Transition imageUrl={waveSlate} /> */}
       <Experiences />
-      <Transition imageUrl={waveWhite} />
+      {/* <Transition imageUrl={waveWhite} /> */}
       <Contact />
-      <Transition imageUrl={waveSlate} />
+      {/* <Transition imageUrl={waveSlate} /> */}
       <Footer />
     </main>
   );
