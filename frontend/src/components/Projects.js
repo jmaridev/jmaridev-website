@@ -7,7 +7,10 @@ import ContentWrapper from "./ContentWrapper";
 
 export default function Projects() {
   return (
-    <section className="bg-white dark:bg-blue-800 w-screen h-fit" id="projects">
+    <section
+      className="bg-sky-100 dark:bg-blue-800 w-screen h-fit"
+      id="projects"
+    >
       <ContentWrapper>
         <SectionTitle
           title="PROJECTS"

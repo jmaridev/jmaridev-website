@@ -24,7 +24,7 @@ import ContentWrapper from "./ContentWrapper";
 
 export default function Skills() {
   return (
-    <section className="bg-indigo-50 dark:bg-blue-950 w-screen h-fit">
+    <section className="bg-sky-100 w-screen h-fit">
       <ContentWrapper className="flex flex-col place-content-center">
         <SectionTitle title="SKILLS" titleExt="My go-to lego blocks 🏆" />
         <div className="grid lg:grid-cols-8 md:grid-cols-6 sm:grid-cols-4 grid-cols-3 text-[80px] gap-12 w-full place-items-center justify-center">

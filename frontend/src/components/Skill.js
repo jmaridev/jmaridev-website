@@ -5,9 +5,11 @@ export default function Skill({
   name = "SKILL NAME",
 }) {
   return (
-    <div className="w-full flex flex-col place-items-center justify-center">
+    <div className="text-blue-900 w-full flex flex-col place-items-center justify-center">
       {icon}
-      <span className="text-center whitespace-nowrap text-base">{name}</span>
+      <span className="text-black text-center whitespace-nowrap text-base">
+        {name}
+      </span>
     </div>
   );
 }

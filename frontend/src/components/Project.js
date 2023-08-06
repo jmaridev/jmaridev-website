@@ -14,13 +14,13 @@ export default function Project({
   statusColour = "bg-neutral-200",
 }) {
   return (
-    <div className="grid md:grid-cols-2 grid-cols-1 gap-12 w-full p-12 rounded-xl bg-white drop-shadow-xl">
+    <div className="bg-white grid md:grid-cols-2 grid-cols-1 gap-12 w-full p-12 rounded-xl drop-shadow-xl">
       <Image
         src={imageUrl}
         alt={imageAlt}
         width={600}
         height={400}
-        className="object-contain rounded-3xl w-full min-h-full"
+        className="bg-white object-contain rounded-3xl w-full min-h-full"
       />
       <div>
         <span className="text-3xl inline-block">{title}</span>

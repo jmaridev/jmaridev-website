@@ -5,10 +5,7 @@ import ContentWrapper from "./ContentWrapper";
 
 export default function Experiences() {
   return (
-    <section
-      className="bg-yellow-50 dark:bg-blue-950 w-screen h-fit"
-      id="experience"
-    >
+    <section className="bg-sky-100 w-screen h-fit" id="experience">
       <ContentWrapper>
         <SectionTitle
           title="PROFESSIONAL EXPERIENCE"
