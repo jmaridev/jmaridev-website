@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
         }
         `}
       </style>
-      <body className="text-slate-800 dark:text-yellow-50">{children}</body>
+      <body className="dark:text-yellow-50">{children}</body>
     </html>
   );
 }
