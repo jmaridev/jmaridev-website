@@ -16,13 +16,13 @@ export default function Experience({
   statusColour = "bg-neutral-200",
 }) {
   return (
-    <div className="dark:bg-slate-800 grid md:grid-cols-2 grid-cols-1 gap-12 w-full p-12 rounded-xl bg-white drop-shadow-xl">
+    <div className="dark:bg-slate-800 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-12 place-items-center w-full p-12 rounded-xl bg-white drop-shadow-xl">
       <Image
         src={imageUrl}
         alt={imageAlt}
         width={600}
         height={400}
-        className="object-contain rounded-3xl w-full min-h-full"
+        className="object-contain rounded-3xl w-full"
       />
       <div>
         <h3 className="text-3xl inline-block">{title}</h3>
