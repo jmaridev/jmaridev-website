@@ -11,12 +11,12 @@ export default function Footer() {
         <p className="text-white">jmari.dev</p>
       </div>
       <hr className="border-t-blue-900 dark:border-t-yellow-50 w-full" />
-      <div className="flex gap-12 text-blue-900 dark:text-yellow-50">
+      <div className="flex flex-col place-items-center justify-center md:flex-row gap-4 md:gap-12 text-blue-900 dark:text-yellow-50">
         <a href="#bio">bio</a>
         <a href="#skills">skills</a>
         <a href="#projects">projects</a>
         <a href="#experience">experience</a>
-        <a href="#testimonials">experience</a>
+        <a href="#testimonials">testimonials</a>
         <a href="#contact">contact</a>
       </div>
       <p className="text-white">&copy; Copyright 2023, jmaridev</p>
