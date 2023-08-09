@@ -3,6 +3,7 @@ import SectionTitle from "./SectionTitle";
 import projectOscarPro from "../../public/projects/project-oscar-pro.png";
 import projectBtHelmets from "../../public/projects/project-bt-helmets.png";
 import projectKryzaTalavera from "../../public/projects/project-kryza-talavera.png";
+import projectJmaridev from "../../public/projects/project-jmaridev.png";
 import ContentWrapper from "./ContentWrapper";
 
 export default function Projects() {
@@ -18,7 +19,7 @@ export default function Projects() {
         />
       </ContentWrapper>
       <ContentWrapper>
-        <div className="grid grid-cols-1 md:grid-cols-2 md:[&>*:nth-child(even)]:translate-y-60 justify-center gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 justify-center gap-12">
           <Project
             imageUrl={projectOscarPro}
             imageAlt="Oscar Pro Logo"
@@ -28,6 +29,17 @@ export default function Projects() {
             tech="Java, Spring, Angular.js, Sass, MySQL, Docker, Linux"
             link="https://oscarpro.ca/"
             status="Ongoing"
+          />
+          <Project
+            imageUrl={projectJmaridev}
+            imageAlt="jmaridev Portfolio Landing Page"
+            title="jmaridev Portfolio Site"
+            description="A dynamic website for me 🙋‍♂️"
+            descriptionExt="Gotta add this in here because it's one of my favourites, all beacuse most of it was hand-crafted by yours truly! I've been enjoying TailwindCSS for its robustness and removes the need for linking CSS files. I am planning to a CMS to simplify the addition of content and maybe add a section for a blog. Come back next time and the site may look a whole lot different!"
+            tech="Next.js, TailwindCSS"
+            link="https://jmari.dev/"
+            status="In Progress"
+            statusColour="bg-yellow-200"
           />
           <Project
             imageUrl={projectKryzaTalavera}
