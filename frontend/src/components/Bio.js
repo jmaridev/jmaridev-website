@@ -6,9 +6,11 @@ import ContentWrapper from "./ContentWrapper";
 
 export default function Bio() {
   return (
-    <section className="w-screen h-fit" id="bio">
-      <ContentWrapper className="flex flex-col">
+    <section className="bg-white dark:bg-slate-900 w-screen h-fit" id="bio">
+      <ContentWrapper className="bg-sky-50 dark:bg-slate-800">
         <SectionTitle title="BIO" titleExt="What's up fellow hooman ✌️" />
+      </ContentWrapper>
+      <ContentWrapper className="flex flex-col">
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-12">
           <Image
             src={avatar}
@@ -23,12 +25,11 @@ export default function Bio() {
             </p>
             <p className="inline-block mb-4">
               He also goes by full stack developer, software engineer, and
-              programmer. He is also somewhat decent at UI/UX design{" "}
+              programmer. He has interests in web app development and web design{" "}
               <span className="text-blue-500">
-                &#40;he took a visual arts and Figma course and now he thinks
-                he's a genius&#41;.{" "}
+                &#40;he does his best on the design part&#41;.{" "}
               </span>
-              He loves designing, developing, and deploying beautiful web
+              He loves developing and deploying beautiful responsive web
               applications, whilst eating some really good food.
             </p>
             <QuickFacts />

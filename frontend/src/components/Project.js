@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import Status from "./Status";
+import ExternalLink from "./ExternalLink";
 
 export default function Project({
   imageUrl = "https://via.placeholder.com/400x200",
@@ -9,23 +10,25 @@ export default function Project({
   description = "Project Description",
   descriptionExt = "Project Description Extended",
   tech = "Project Tech",
-  links = "Project Links",
+  link = "Project Links",
   status = "Project Status",
   statusColour = "bg-neutral-200",
 }) {
   return (
-    <div className="bg-white grid md:grid-cols-2 grid-cols-1 gap-12 w-full p-12 rounded-xl drop-shadow-xl">
+    <div className="bg-white dark:bg-slate-800 flex flex-col gap-4 w-full p-12 rounded-xl drop-shadow-xl">
       <Image
         src={imageUrl}
         alt={imageAlt}
         width={600}
         height={400}
-        className="bg-white object-contain rounded-3xl w-full min-h-full"
+        className="bg-white object-contain rounded-3xl w-full"
       />
       <div>
         <span className="text-3xl inline-block">{title}</span>
         <br />
-        <p className="leading-tight text-neutral-500 mb-2">{description}</p>
+        <p className="leading-tight text-neutral-500 dark:text-blue-300 mb-2">
+          {description}
+        </p>
         <Status
           className="mb-4"
           status={status}
@@ -34,9 +37,7 @@ export default function Project({
         <br />
         <p className="text-sm mb-4">{descriptionExt}</p>
         <p className="text-sm mb-4">Techstack: {tech}</p>
-        <a href={links} className="text-sm">
-          Link <FaExternalLinkAlt className="inline" />
-        </a>
+        <ExternalLink link={link} />
       </div>
     </div>
   );

@@ -24,9 +24,11 @@ import ContentWrapper from "./ContentWrapper";
 
 export default function Skills() {
   return (
-    <section className="bg-sky-100 w-screen h-fit">
-      <ContentWrapper className="flex flex-col place-content-center">
+    <section className="bg-white dark:bg-slate-900 w-screen h-fit">
+      <ContentWrapper className="bg-sky-50 dark:bg-slate-800">
         <SectionTitle title="SKILLS" titleExt="My go-to lego blocks 🏆" />
+      </ContentWrapper>
+      <ContentWrapper className="flex flex-col place-content-center">
         <div className="grid lg:grid-cols-8 md:grid-cols-6 sm:grid-cols-4 grid-cols-3 text-[80px] gap-12 w-full place-items-center justify-center">
           <Skill icon={<FaHtml5 />} name="HTML" />
           <Skill icon={<FaCss3 />} name="CSS" />

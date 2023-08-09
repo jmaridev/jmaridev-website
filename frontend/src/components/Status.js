@@ -5,7 +5,7 @@ export default function Status({
 }) {
   return (
     <span
-      className={`inline-block rounded-full px-4 text-sm ${backgroundColour} ${className}`}
+      className={`dark:text-slate-900 inline-block rounded-full px-4 text-sm ${backgroundColour} ${className}`}
     >
       {status}
     </span>

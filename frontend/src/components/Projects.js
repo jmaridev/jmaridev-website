@@ -8,15 +8,17 @@ import ContentWrapper from "./ContentWrapper";
 export default function Projects() {
   return (
     <section
-      className="bg-sky-100 dark:bg-blue-800 w-screen h-fit"
+      className="bg-white dark:bg-slate-900 w-screen h-fit"
       id="projects"
     >
-      <ContentWrapper>
+      <ContentWrapper className="bg-sky-50 dark:bg-slate-800">
         <SectionTitle
           title="PROJECTS"
           titleExt="My current and upcoming trophies 🏆"
         />
-        <div className="flex flex-col place-items-center justify-center gap-12">
+      </ContentWrapper>
+      <ContentWrapper>
+        <div className="grid grid-cols-1 md:grid-cols-2 md:[&>*:nth-child(even)]:translate-y-60 justify-center gap-12">
           <Project
             imageUrl={projectOscarPro}
             imageAlt="Oscar Pro Logo"
@@ -24,7 +26,7 @@ export default function Projects() {
             description="A web application that allows physicians to manage their patients' medical records"
             descriptionExt="Currently contributing to full stack features and bug fixes at WELL Health Technologies. Completed a major feature that allows physicians to manage their patients' medical records from multiple clinics."
             tech="Java, Spring, Angular.js, Sass, MySQL, Docker, Linux"
-            links="https://oscarpro.ca/"
+            link="https://oscarpro.ca/"
             status="Ongoing"
           />
           <Project
@@ -32,9 +34,9 @@ export default function Projects() {
             imageAlt="Kryza Talavera Portfolio Site Landing Page"
             title="Kryza Talavera Portfolio Site"
             description="A dynamic website for a professional branding strategist"
-            descriptionExt="Currently developing a dynamic website for a friend which will showcase her work and services. This is my first TailwindCSS project, which has opened my eyes to the wonders of this CSS framework. A temporary landing page is currently live."
+            descriptionExt="Currently developing a dynamic website for a friend which will showcase her work and services. As my first official TailwindCSS project, my eyes have been opened to the reduced coupling of files, allowing for more efficient workflows. A temporary landing page is currently live."
             tech="Next.js, Strapi, TailwindCSS"
-            links="https://kryzatalavera.com/"
+            link="https://kryzatalavera.com/"
             status="In Progress"
             statusColour="bg-yellow-200"
           />
@@ -43,8 +45,9 @@ export default function Projects() {
             imageAlt="BT Helmets Landing Page Photo"
             title="BT Helmets"
             description="A dynamic website for a motorcycle helmet company"
+            descriptionExt="Completed a dynamic website which showcases the company's products and services. The site features a headless CMS for the client to manage their site content. If you would like to inquire for a high quality custom helmet design, feel free to visit the site and contact them!"
             tech="Next.js, Strapi, Sass"
-            links="https://www.bthelmets.ca/"
+            link="https://www.bthelmets.ca/"
             status="Completed"
             statusColour="bg-green-200"
           />

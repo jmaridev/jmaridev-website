@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import Status from "./Status";
+import ExternalLink from "./ExternalLink";
 
 export default function Experience({
   imageUrl = "https://via.placeholder.com/400x200",
@@ -10,12 +11,12 @@ export default function Experience({
   description = "Experience Description",
   descriptionExt = "",
   tech = "",
-  links = "Experience Links",
+  link = "Experience Links",
   status = "Experience Status",
   statusColour = "bg-neutral-200",
 }) {
   return (
-    <div className="grid md:grid-cols-2 grid-cols-1 gap-12 w-full p-12 rounded-xl bg-white drop-shadow-xl">
+    <div className="dark:bg-slate-800 grid md:grid-cols-2 grid-cols-1 gap-12 w-full p-12 rounded-xl bg-white drop-shadow-xl">
       <Image
         src={imageUrl}
         alt={imageAlt}
@@ -25,10 +26,10 @@ export default function Experience({
       />
       <div>
         <h3 className="text-3xl inline-block">{title}</h3>
-        <p className="mb-2 text-neutral-500">
+        <p className="mb-2 text-neutral-500 dark:text-blue-300">
           <i>{position}</i>
         </p>
-        <p className="leading-tight text-neutral-500 mb-2">{description}</p>
+        <p className="leading-tight mb-2">{description}</p>
         <Status
           className="mb-4"
           status={status}
@@ -37,9 +38,7 @@ export default function Experience({
         <br />
         {descriptionExt && <p className="text-sm mb-4">{descriptionExt}</p>}
         {tech && <p className="text-sm mb-4">Techstack: {tech}</p>}
-        <a href={links} className="text-sm">
-          Link <FaExternalLinkAlt className="inline" />
-        </a>
+        <ExternalLink link={link} />
       </div>
     </div>
   );
