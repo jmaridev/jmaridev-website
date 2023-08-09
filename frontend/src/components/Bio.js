@@ -24,12 +24,13 @@ export default function Bio() {
               Here is your friendly neighbourhood web developer.
             </p>
             <p className="inline-block mb-4">
-              He also goes by full stack developer, software engineer, and
-              programmer. He has interests in web app development and web design{" "}
+              He also goes by{" "}
+              <span className="text-orange-500">Justin Mari Maliwat</span>. He
+              has interests in web app development and web design{" "}
               <span className="text-blue-500">
-                &#40;he does his best on the design part&#41;.{" "}
+                &#40;he does his best on the design part&#41;
               </span>
-              He loves developing and deploying beautiful responsive web
+              . He loves creating and deploying beautiful responsive web
               applications, whilst eating some really good food.
             </p>
             <QuickFacts />
