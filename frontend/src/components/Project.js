@@ -21,7 +21,7 @@ export default function Project({
         alt={imageAlt}
         width={600}
         height={400}
-        className="bg-white object-contain rounded-3xl w-full"
+        className="bg-white object-contain rounded-xl w-full"
       />
       <div>
         <span className="text-3xl inline-block">{title}</span>

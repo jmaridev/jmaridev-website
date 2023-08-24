@@ -22,7 +22,8 @@ export default function Experiences() {
             imageAlt="WELL Health Technologies Corp. Logo"
             title="WELL Health Technologies Corp."
             position="Software Development Engineer"
-            description="A Canadian company aiming to improve the overall healthcare experience for patients and practitioners with digital health solutions and services"
+            description="A Canadian company aiming to improve the overall healthcare experience for patients and practitioners with digital health solutions and services."
+            quote={`"We'll start you off with floaties and move you towards the deep end." *Proceeds to throw me into the deep end, minus the floaties* (But I'm glad they did, because I learned a lot from it and got spearhead the development of some pretty cool features 😌)`}
             status="Feb 2022 - Present"
             statusColour="bg-green-200"
             link="https://well.company/"

@@ -9,7 +9,7 @@ export default function Experience({
   title = "Experience Title",
   position = "Experience Position",
   description = "Experience Description",
-  descriptionExt = "",
+  quote = "",
   tech = "",
   link = "Experience Links",
   status = "Experience Status",
@@ -22,7 +22,7 @@ export default function Experience({
         alt={imageAlt}
         width={600}
         height={400}
-        className="object-contain rounded-3xl w-full"
+        className="object-contain rounded-xl w-full"
       />
       <div>
         <h3 className="text-3xl inline-block">{title}</h3>
@@ -30,13 +30,13 @@ export default function Experience({
           <i>{position}</i>
         </p>
         <p className="leading-tight mb-2">{description}</p>
+        {quote && <p className="text-xs mb-2 dark:text-slate-400">{quote}</p>}
         <Status
           className="mb-4"
           status={status}
           backgroundColour={statusColour}
         />
         <br />
-        {descriptionExt && <p className="text-sm mb-4">{descriptionExt}</p>}
         {tech && <p className="text-sm mb-4">Techstack: {tech}</p>}
         <ExternalLink link={link} />
       </div>

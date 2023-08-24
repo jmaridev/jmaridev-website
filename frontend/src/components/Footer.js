@@ -19,7 +19,7 @@ export default function Footer() {
         <a href="#testimonials">testimonials</a>
         <a href="#contact">contact</a>
       </div>
-      <p className="text-white">&copy; Copyright 2023, jmaridev</p>
+      <p className="text-white text-xs">&copy; Copyright 2023, jmaridev</p>
     </footer>
   );
 }

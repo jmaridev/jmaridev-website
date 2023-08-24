@@ -15,7 +15,7 @@ export default function Projects() {
       <ContentWrapper className="bg-sky-50 dark:bg-slate-800">
         <SectionTitle
           title="PROJECTS"
-          titleExt="My current and upcoming trophies 🏆"
+          titleExt="My growing trophy gallery 🏆"
         />
       </ContentWrapper>
       <ContentWrapper>

@@ -14,15 +14,15 @@ export default function Testimonial({
         alt={imageAlt}
         width={600}
         height={400}
-        className="bg-white object-contain rounded-3xl w-full"
+        className="bg-slate-900 object-cover rounded-full w-60 h-60 self-center"
       />
       <div>
         <span className="text-3xl inline-block">{name}</span>
         <br />
-        <p className="italic leading-tight text-neutral-500 dark:text-blue-300 mb-2">
+        <p className="italic leading-tight text-neutral-500 dark:text-blue-300 mb-4">
           {position}
         </p>
-        <p className="text-sm mb-4">{testimonial}</p>
+        <div className="text-sm">{testimonial}</div>
       </div>
     </div>
   );

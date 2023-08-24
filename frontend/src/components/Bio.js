@@ -8,7 +8,7 @@ export default function Bio() {
   return (
     <section className="bg-white dark:bg-slate-900 w-screen h-fit" id="bio">
       <ContentWrapper className="bg-sky-50 dark:bg-slate-800">
-        <SectionTitle title="BIO" titleExt="What's up fellow hooman ✌️" />
+        <SectionTitle title="BIO" titleExt="Smile and wave 👋" />
       </ContentWrapper>
       <ContentWrapper className="flex flex-col">
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-12">

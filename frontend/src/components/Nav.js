@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Navlink from "./Navlink";
 import logo from "../../public/logos/logo-white-transparent.svg";
-import { FiMenu } from "react-icons/fi";
+import { FiMenu, FiX } from "react-icons/fi";
 import { useState } from "react";
 
 export default function Nav() {
@@ -18,7 +18,7 @@ export default function Nav() {
   };
 
   return (
-    <nav className="sticky bg-white dark:bg-slate-800 top-0 left-0 flex gap-12 place-items-center justify-between md:justify-center h-fit w-full p-4 text-3xl drop-shadow-xl">
+    <nav className="z-50 sticky bg-white dark:bg-slate-800 top-0 left-0 flex gap-12 place-items-center justify-between md:justify-center h-fit w-full p-4 text-3xl drop-shadow-xl">
       <a className="transition-all text-blue-500 hover:scale-110" href="#top">
         <Image
           src={logo}
@@ -28,10 +28,10 @@ export default function Nav() {
         />
       </a>
       <button className="block md:hidden" onClick={handleToggleNavbar}>
-        <FiMenu />
+        {isMenuOpen ? <FiX /> : <FiMenu />}
       </button>
       <div
-        className={`absolute transition-all top-0 left-0 flex-col place-items-center justify-center text-5xl w-screen h-screen md:h-fit md:w-fit md:static md:text-lg lg:text-3xl flex md:flex-row gap-12 ${
+        className={`-z-50 absolute left-0 transition-all duration-500 flex-col place-items-center justify-center text-5xl w-screen h-screen md:h-fit md:w-fit md:static md:text-lg lg:text-3xl flex md:flex-row gap-12 ${
           isMenuOpen ? "top-0 bg-white dark:bg-slate-900" : "-top-[100vh]"
         }`}
         onClick={handleCloseNavbar}
