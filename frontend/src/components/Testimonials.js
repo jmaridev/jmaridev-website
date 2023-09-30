@@ -37,7 +37,7 @@ export default function Testimonials() {
           <Testimonial
             name="Kryza Talavera"
             position="Brand Designer and Strategist Freelancer"
-            testimonial={testimonialAndrewBoyle}
+            testimonial={testimonialKryzaTalavera}
             imageUrl={testimonialKryzaTalaveraImage}
             imageAlt="Kryza Talavera"
           />
@@ -76,5 +76,14 @@ const testimonialAndrewBoyle = (
     explained our options in detail, and provided creative solutions to support
     our branding aesthetic. I highly recommend his services for his quality,
     transparency and results.
+  </p>
+);
+
+const testimonialKryzaTalavera = (
+  <p>
+    Working with Justin was the perfect collaboration! I needed a website up
+    fast that properly represented me and he listened to my ideas, discussed
+    with me and provided me with various options. Together we created a website
+    that truly represented me and what I offer.
   </p>
 );
