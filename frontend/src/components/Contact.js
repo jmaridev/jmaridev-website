@@ -30,7 +30,11 @@ export default function Contact() {
           method="POST"
           className="flex flex-col gap-4 place-items-center justify-center"
         >
-          <input type="hidden" name="access_key" value="MY_ACCESS_KEY" />
+          <input
+            type="hidden"
+            name="access_key"
+            value={process.env.WEB3FORMS_KEY}
+          />
           <input
             className="w-full p-4 transition-all border-2 border-slate-500 hover:border-blue-500 focus:border-blue-500 dark:bg-slate-800 rounded-xl"
             type="text"
