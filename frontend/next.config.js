@@ -7,6 +7,7 @@ const nextConfig = {
       "www.google.com",
       "picsum.photos",
       "www.w3schools.com",
+      "cdn.sanity.io",
     ],
   },
 };
