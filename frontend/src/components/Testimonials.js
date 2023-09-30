@@ -1,12 +1,11 @@
 import SectionTitle from "./SectionTitle";
 import ContentWrapper from "./ContentWrapper";
 import Testimonial from "./Testimonial";
-import TestimonialLong from "./TestimonialLong";
-import testimonialChristineVelascoImage from "../../public/testimonials/testimonial-christinevelasco.webp";
-import testimonialAndrewBoyleImage from "../../public/testimonials/testimonial-andrewboyle.png";
-import testimonialKryzaTalaveraImage from "../../public/testimonials/testimonial-kryzatalavera.svg";
+import { client } from "../../sanity/lib/client";
+import { urlForImage } from "../../sanity/lib/image";
 
-export default function Testimonials() {
+export default async function Testimonials() {
+  const testimonials = await client.fetch(`*[_type == "testimonial"]`);
   return (
     <section
       className="bg-white dark:bg-slate-900 w-screen h-fit"
@@ -19,71 +18,18 @@ export default function Testimonials() {
         />
       </ContentWrapper>
       <ContentWrapper>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12">
-          <TestimonialLong
-            name="Christine Velasco"
-            position="Graphic Designer, Product Painter, and Co-Founder of bt Helmets"
-            testimonial={testimonialChristineVelasco}
-            imageUrl={testimonialChristineVelascoImage}
-            imageAlt="Christine Velasco"
-          />
-          <Testimonial
-            name="Andrew Boyle"
-            position="Co-Founder of bt Helmets"
-            testimonial={testimonialAndrewBoyle}
-            imageUrl={testimonialAndrewBoyleImage}
-            imageAlt="Andrew Boyle"
-          />
-          <Testimonial
-            name="Kryza Talavera"
-            position="Brand Designer and Strategist Freelancer"
-            testimonial={testimonialKryzaTalavera}
-            imageUrl={testimonialKryzaTalaveraImage}
-            imageAlt="Kryza Talavera"
-          />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12 md:[&>*:nth-child(3n+1)]:col-span-2">
+          {testimonials.map((testimonial) => (
+            <Testimonial
+              name={testimonial?.name}
+              position={testimonial?.position}
+              testimonial={testimonial?.testimonial}
+              imageUrl={urlForImage(testimonial?.image).url()}
+              imageAlt={testimonial?.name}
+            />
+          ))}
         </div>
       </ContentWrapper>
     </section>
   );
 }
-
-const testimonialChristineVelasco = (
-  <p>
-    I had the pleasure of collaborating with Justin on our company&apos;s
-    website and we were able to create a website where our clients can easily
-    access important information about our services. We had consistent
-    communication throughout the process and we were able to get all of our
-    ideas across. Justin was very patient and attentive to all our needs and
-    made the experience of building a website from scratch so easy.
-    <br />
-    <br />
-    Not only is our platform UI/UX friendly, but it uses simple CMS that allows
-    us to change our content as we please. He also has an eye for design where
-    he took our brand to match the website perfectly. Everything from
-    typography, colours, photos, buttons, and the transitions between pages
-    created a harmonious design we are proud to use as our website.
-    <br />
-    <br />I recommend Justin if you are looking for a web developer who treats
-    your project as their own and who&apos;s exceptional services will exceed
-    your expectations.
-  </p>
-);
-
-const testimonialAndrewBoyle = (
-  <p>
-    Having zero experience in web development I didn&apos;t know where to start
-    to get a website for my business, yet Justin made it easy. He carefully
-    explained our options in detail, and provided creative solutions to support
-    our branding aesthetic. I highly recommend his services for his quality,
-    transparency and results.
-  </p>
-);
-
-const testimonialKryzaTalavera = (
-  <p>
-    Working with Justin was the perfect collaboration! I needed a website up
-    fast that properly represented me and he listened to my ideas, discussed
-    with me and provided me with various options. Together we created a website
-    that truly represented me and what I offer.
-  </p>
-);

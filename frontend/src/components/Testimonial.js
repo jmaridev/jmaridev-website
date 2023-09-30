@@ -1,5 +1,14 @@
 import Image from "next/image";
 
+function convertNewLinesToBreaks(text) {
+  return text.split("\n").map((str) => (
+    <p>
+      {str}
+      <br />
+    </p>
+  ));
+}
+
 export default function Testimonial({
   imageUrl = "https://via.placeholder.com/400x200",
   imageAlt = "Placeholder Image",
@@ -22,7 +31,7 @@ export default function Testimonial({
         <p className="italic leading-tight text-neutral-500 dark:text-blue-300 mb-4">
           {position}
         </p>
-        <div className="text-sm">{testimonial}</div>
+        <div className="text-sm">{convertNewLinesToBreaks(testimonial)}</div>
       </div>
     </div>
   );
