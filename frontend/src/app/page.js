@@ -5,7 +5,6 @@ import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Nav from "@/components/Nav";
 import Projects from "@/components/Projects";
-import SanityTest from "@/components/SanityTest";
 import Skills from "@/components/Skills";
 import Testimonials from "@/components/Testimonials";
 
