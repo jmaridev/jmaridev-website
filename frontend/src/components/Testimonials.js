@@ -49,12 +49,12 @@ export default function Testimonials() {
 
 const testimonialChristineVelasco = (
   <p>
-    I had the pleasure of collaborating with Justin on our company's website and
-    we were able to create a website where our clients can easily access
-    important information about our services. We had consistent communication
-    throughout the process and we were able to get all of our ideas across.
-    Justin was very patient and attentive to all our needs and made the
-    experience of building a website from scratch so easy.
+    I had the pleasure of collaborating with Justin on our company&apos;s
+    website and we were able to create a website where our clients can easily
+    access important information about our services. We had consistent
+    communication throughout the process and we were able to get all of our
+    ideas across. Justin was very patient and attentive to all our needs and
+    made the experience of building a website from scratch so easy.
     <br />
     <br />
     Not only is our platform UI/UX friendly, but it uses simple CMS that allows
@@ -64,15 +64,15 @@ const testimonialChristineVelasco = (
     created a harmonious design we are proud to use as our website.
     <br />
     <br />I recommend Justin if you are looking for a web developer who treats
-    your project as their own and who's exceptional services will exceed your
-    expectations.
+    your project as their own and who&apos;s exceptional services will exceed
+    your expectations.
   </p>
 );
 
 const testimonialAndrewBoyle = (
   <p>
-    Having zero experience in web development I didn't know where to start to
-    get a website for my business, yet Justin made it easy. He carefully
+    Having zero experience in web development I didn&apos;t know where to start
+    to get a website for my business, yet Justin made it easy. He carefully
     explained our options in detail, and provided creative solutions to support
     our branding aesthetic. I highly recommend his services for his quality,
     transparency and results.
