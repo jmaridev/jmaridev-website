@@ -21,6 +21,7 @@ export default async function SanityTest() {
           <pre>{JSON.stringify(testimonials, null, 2)}</pre>
           <Image
             src={urlForImage(testimonials[0]?.image).url()}
+            alt="imagetest"
             width={200}
             height={200}
           />
@@ -30,7 +31,7 @@ export default async function SanityTest() {
         <div>
           <div>¯\_(ツ)_/¯</div>
           <p>
-            Your data will show up here when you've configured everything
+            Your data will show up here when youve configured everything
             correctly
           </p>
         </div>
