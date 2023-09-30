@@ -1,8 +1,8 @@
 import Image from "next/image";
 
 function convertNewLinesToBreaks(text) {
-  return text.split("\n").map((str) => (
-    <p>
+  return text.split("\n").map((str, index) => (
+    <p key={index}>
       {str}
       <br />
     </p>
