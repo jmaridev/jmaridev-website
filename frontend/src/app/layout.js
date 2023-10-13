@@ -10,6 +10,8 @@ export const metadata = {
   description: "Justin Mari's professional portfolio website",
 };
 
+export const revalidate = process.env.REVALIDATION_INTERVAL || 86400;
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
