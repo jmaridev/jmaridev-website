@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@sanity/vision": "^3.16.7",
+    "@vercel/analytics": "^1.1.1",
     "autoprefixer": "10.4.14",
     "eslint": "8.45.0",
     "eslint-config-next": "13.4.12",

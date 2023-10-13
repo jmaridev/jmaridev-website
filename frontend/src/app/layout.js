@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Ubuntu, Poppins } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 
 const ubuntu = Ubuntu({ subsets: ["latin"], weight: "300" });
 const poppins = Poppins({ subsets: ["latin"], weight: "300" });
@@ -31,7 +32,10 @@ export default function RootLayout({ children }) {
         }
         `}
       </style>
-      <body className="text-slate-900 dark:text-yellow-50">{children}</body>
+      <body className="text-slate-900 dark:text-yellow-50">
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
